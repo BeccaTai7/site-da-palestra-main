@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprovante de Inscrição | INFOIND 2026</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">INFOIND <span>2026</span></div>
+        </div>
+    </header>
+ <ul>
+                </ul>
+    <main class="container" style="padding: 50px 20px; text-align: center;">
+        <div style="background: white; color: black; padding: 30px; border: 2px dashed #000; display: inline-block; text-align: left; max-width: 500px; width: 100%;">
+            <h2 style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px;">COMPROVANTE DE INSCRIÇÃO</h2>
+            
+            <p style="margin-top: 20px;"><strong>Evento:</strong> CONGRESSO INFOIND 2026</p>
+            <p><strong>Local:</strong> IFSP Campus Birigui</p>
+            
+            <div style="background: #f0f0f0; padding: 15px; margin: 20px 0; border-radius: 5px;">
+                <p><strong>Participante:</strong> <span id="nome-exibido">Carregando...</span></p>
+                <p><strong>Status:</strong> ✅ Inscrição Confirmada</p>
+            </div>
+
+            <p style="font-size: 0.9rem; color: #555;">* Apresente este comprovante na entrada do campus para retirar seu crachá.</p>
+            
+            <button onclick="window.print()" style="margin-top: 20px; padding: 10px; background: #000; color: #fff; cursor: pointer; width: 100%;">Imprimir Comprovante</button>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <a href="index.html" style="
+                text-decoration: none; 
+                background-color: #666; 
+                color: white; 
+                padding: 12px 25px; 
+                border-radius: 5px; 
+                font-weight: bold;
+                display: inline-block;
+                transition: 0.3s;
+            ">⬅ Voltar para o Site</a>
+        </div>
+    </main>
+
+    <script>
+        // Esse código serve para mostrar o nome que a pessoa digitar
+        const urlParams = new URLSearchParams(window.location.search);
+        const nome = urlParams.get('nome') || "Participante";
+        document.getElementById('nome-exibido').innerText = nome;
+    </script>
+</body>
+</html>
