@@ -1,12 +1,11 @@
-/* Reset e Definições Globais */
 :root {
-    --primary: #32a041;       /* Verde IFSP */
+    --primary: #32a041;       
     --primary-dark: #267a32;
-    --accent: #c8191e;        /* Vermelho IFSP */
-    --bg-light: #f8fafc;
+    --accent: #c8191e;        
+    --bg-light: #b7dab3;
     --white: #ffffff;
     --text-dark: #1a1a1a;
-    --text-muted: #64748b;
+    --text-muted: #255a2a;
 }
 
 * {
@@ -132,7 +131,7 @@ h1 {
     font-size: 1.1rem;
     display: inline-block;
     transition: all 0.3s;
-    box-shadow: 0 10px 15px -3px rgba(50, 160, 65, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(0, 255, 34, 0.3);
 }
 
 .btn-primary:hover {
